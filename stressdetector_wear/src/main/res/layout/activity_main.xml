@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#C60000"
+                android:text="EXIT"
+                android:onClick="salir"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="26dp"/>
+
+            <TextView
+                android:id="@+id/giroscopio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giroscopio"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <TextView
+                android:id="@+id/acelerometro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acelerómetro"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <TextView
+                android:id="@+id/magnetico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Magnetómetro"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <TextView
+                android:id="@+id/luz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luz"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <TextView
+                android:id="@+id/pulsaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pulsaciones"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.wear.widget.BoxInsetLayout>

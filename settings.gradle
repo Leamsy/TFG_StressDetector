@@ -1,0 +1,3 @@
+rootProject.name='Stress Detector'
+include ':stressdetector_phone'
+include ':stressdetector_wear'

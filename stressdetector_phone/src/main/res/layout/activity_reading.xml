@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43FF9800"
+    tools:context=".Reading">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="283dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/loader"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/results"
+                    android:layout_width="match_parent"
+                    android:layout_height="368dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/relajado" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/blackline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="402dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="402dp"
+                    android:layout_weight="0.975"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/texto17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIROSCOPIO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/giroscopio_uni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ACELERÓMETRO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/acelerometro_uni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MAGNETÓMETRO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/magnetometro_uni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LUZ"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/luz_uni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="11dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.05"
+                    app:srcCompat="@drawable/blackline_vertical" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.975"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/texto22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PULSACIONES"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pulsaciones_uni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BLOOD VOLUME PULSE"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bvp_uni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ELECTRODERMAL ACTIVITY SENSOR"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gsr_uni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView32"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TEMPERATURA"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/temp_uni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/blackline" />
+
+            <TextView
+                android:id="@+id/time_devices"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="TIME"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/blackline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.97"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:srcCompat="@drawable/phone" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIROSCOPIO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/giroscopio_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ACELERÓMETRO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/acelerometro_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MAGNETÓMETRO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/magnetico_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LUZ"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/luz_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PROXIMIDAD"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/proximidad_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="550dp"
+                    android:layout_weight="0.01"
+                    app:srcCompat="@drawable/blackline_vertical" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.97"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:srcCompat="@drawable/watch" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIROSCOPIO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/giroscopio_watch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ACELERÓMETRO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/acelerometro_watch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MAGNETÓMETRO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/magnetico_watch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LUZ"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/luz_watch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PULSACIONES"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pulsaciones_watch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.01"
+                    app:srcCompat="@drawable/blackline_vertical" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="550dp"
+                    android:layout_weight="0.97"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        app:srcCompat="@drawable/empatica" />
+
+                    <ImageView
+                        android:id="@+id/imageView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MUÑECA"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/wrist_status_label_empatica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ACELERÓMETRO"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/acelerometro_empatica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BLOOD VOLUME PULSE"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bvp_empatica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ELECTRODERMAL ACTIVITY SENSOR"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/gsr_empatica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="INTER-BEAT INTERVAL"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ibi_empatica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        app:srcCompat="@drawable/blackline" />
+
+                    <TextView
+                        android:id="@+id/texto15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TEMPERATURA"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/temp_empatica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="26dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
